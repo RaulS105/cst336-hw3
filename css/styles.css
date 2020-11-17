@@ -1,0 +1,53 @@
+body
+{
+	background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 62%);
+	text-align: center;
+	font-family: "Pacifico", san-serif;
+}
+
+button.set
+{
+
+	font-family: "Pacifico", san-serif;
+	background-image: linear-gradient(orange, purple);
+}
+h3
+{
+	font-size: 40px;
+}
+img.img-fluid
+{
+	padding: 0;
+	margin: 0;
+	
+	/* Uses webkit to set the constant bounce of img animations */
+	height: 275px;
+
+	-webkit-animation: action 1s infinite  alternate;
+        animation: action 1s infinite  alternate;
+}
+@-webkit-keyframes action 
+{
+  0% {
+         transform: translateY(0); 
+     }
+
+  100% 
+     { 
+ 	  	transform: translateY(-20px);
+     }
+}
+    
+@keyframes action 
+{
+  0% {
+         transform: translateY(0); 
+     }
+
+ 100% 
+     { 
+     	transform: translateY(-10px);
+     }
+
+}
